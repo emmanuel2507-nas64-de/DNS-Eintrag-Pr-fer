@@ -52,3 +52,8 @@ app.listen(PORT, () => {
     console.log(`DNS Checker Backend läuft auf http://localhost:${PORT}`);
     console.log(`Bereit für Abfragen an /api/dns-lookup`);
 });
+
+app.listen(PORT, () => {
+    console.log(`DNS Checker Backend läuft auf http://localhost:${PORT}`);
+    console.log(`Bereit für Abfragen an /api/dns-lookup`);
+});
