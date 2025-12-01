@@ -1,0 +1,15 @@
+# Docker Compose File for DNS Entry Checker
+
+version: '3.8'
+
+services:
+  dns-checker:
+    image: emmanuel2507/nas64-de-dns-eintrag-pruefer:latest
+    container_name: dns_checker
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
